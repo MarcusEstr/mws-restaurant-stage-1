@@ -273,3 +273,16 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/*Media queries - refine as I determine where to 'break' the page's design out*/
+@media screen and (min-width: 600px) {
+  p {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  p {
+    background-color: blue;
+  }
+}
