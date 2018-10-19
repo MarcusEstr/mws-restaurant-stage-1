@@ -107,10 +107,14 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 60px;
+  height: 130px;
   background-color: #3397DB;
-  align-items: center;
-  display: flex;
+  /*align-items: center;*/
+  /*display: flex;*/
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+
 }
 .filter-options h2 {
   color: white;
@@ -277,9 +281,12 @@ nav h1 a {
 }
 
 /*Media queries - refine as I determine where to 'break' the page's design out*/
-@media screen and (min-width: 600px) {
-  p {
-    background-color: green;
+@media screen and (min-width: 461px) {
+  .filter-options {
+    padding-top: 0px;
+    height: 60px;
+    display: flex;
+    align-items: center;
   }
 }
 
