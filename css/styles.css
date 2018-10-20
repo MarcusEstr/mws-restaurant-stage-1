@@ -72,7 +72,8 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    /*width: calc(50% - 80px);*/
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -149,7 +150,7 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  /*margin: 15px;*/
+  margin: auto;
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
@@ -295,6 +296,13 @@ nav h1 a {
     
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .inside #map-container {
+    height: calc(100vh - 100px);
+    top: 100px;
   }
 }
 
