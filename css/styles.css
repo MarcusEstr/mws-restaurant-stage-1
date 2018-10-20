@@ -142,16 +142,19 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
+  /*margin: 15px;*/
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
   width: 270px;
+  /*width: auto;*/
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -281,12 +284,17 @@ nav h1 a {
 }
 
 /*Media queries - refine as I determine where to 'break' the page's design out*/
-@media screen and (min-width: 461px) {
+@media screen and (min-width: 445px) {
   .filter-options {
     padding-top: 0px;
     height: 60px;
     display: flex;
     align-items: center;
+  }
+  #restaurants-list {
+    
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
