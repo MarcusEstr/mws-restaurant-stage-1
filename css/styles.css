@@ -151,7 +151,7 @@ nav.breadcrumb {
   width: 200px;
 }
 
-.filter-options select:focus, .neighborhoods-select select:hover {
+.filter-options select:focus, .filter-options select:hover {
   background-color: #ffa500;
 }
 
