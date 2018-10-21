@@ -15,7 +15,8 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
 
 # References
-Favicon generated via [Favicon.io](https://favicon.io/).
+* Favicon generated via [Favicon.io](https://favicon.io/).
+* Skip Navigation documentation via [WebAIM](https://webaim.org/techniques/skipnav/).
 
 
 
