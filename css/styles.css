@@ -313,6 +313,19 @@ nav.breadcrumb {
   margin: 10px 10px;
 }
 
+
+.skip {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -1000px;
+    background-color: white;
+    padding: 5px 10px;
+}
+.skip:focus {
+    left: 15px;
+}
+
 /*Media queries - refine as I determine where to 'break' the page's design out*/
 @media screen and (min-width: 445px) {
   .filter-options {
