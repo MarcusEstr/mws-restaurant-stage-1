@@ -112,6 +112,14 @@ nav.breadcrumb {
   width: 100%;
   background-color: #ccc;
 }
+
+.leaflet-pane img:hover, .leaflet-pane img:focus {
+  border-top: 3px solid #ffa500;
+  border-bottom: 3px solid #ffa500;
+  border-left: 3px solid #ffa500;
+  border-right: 3px solid #ffa500;
+  background-color: white;
+}
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
@@ -141,6 +149,10 @@ nav.breadcrumb {
   margin: 10px;
   padding: 0 10px;
   width: 200px;
+}
+
+.filter-options select:focus, .neighborhoods-select select:hover {
+  background-color: #ffa500;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -197,6 +209,10 @@ nav.breadcrumb {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+#restaurants-list li a:focus, #restaurants-list li a:hover {
+  background-color: #3397DB;
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -296,8 +312,6 @@ nav.breadcrumb {
 #reviews-list li p {
   margin: 10px 10px;
 }
-
-
 
 /*Media queries - refine as I determine where to 'break' the page's design out*/
 @media screen and (min-width: 445px) {
