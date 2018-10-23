@@ -49,3 +49,14 @@ self.addEventListener('activate', function(event) {
 	);
 
 });
+
+
+//To get browser to access cache when Offline, need to control the fetch request:
+self.addEventListener('fetch', function(event) {
+	event.respondWith(
+		//Try to provide cached data.
+		caches.match(event.request).then(function(response) {
+			return response || fetch(event.request);
+		})
+	);
+});
