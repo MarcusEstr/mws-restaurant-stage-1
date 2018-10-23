@@ -1,8 +1,7 @@
 const applicationName = 'RestaurantReviews';
 const cacheName = applicationName + "-v.0.8";
-const imageCache = applicationName + "-image";
 
-let cacheArray = [cacheName, imageCache];
+let cacheArray = [cacheName];
 
 //Cache assets when Service Worker is installed on browser.
 self.addEventListener('install', function(event) {
@@ -16,7 +15,9 @@ self.addEventListener('install', function(event) {
 				['/', '/restaurant.html', 
 				'/css/styles.css', 
 				'/js/main.js', '/js/restaurant_info.js', '/js/register-sw.js', '/js/dbhelper.js',
-				'/data/restaurants.json']
+				'/img/1.jpg', '/img/2.jpg', '/img/3.jpg', '/img/4.jpg', '/img/5.jpg',
+				'/img/6.jpg', '/img/7.jpg', '/img/8.jpg', '/img/9.jpg',
+				'/data/restaurants.json', '/favicon.ico']
 			);
 
 		})
